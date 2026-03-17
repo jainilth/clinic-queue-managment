@@ -40,7 +40,7 @@ async function MyAppointment() {
                         </thead>
                         <tbody className="divide-y divide-gray-50">
                             {response?.map((appointment: any) => (
-                                <tr key={appointment.id || appointment._id} className="hover:bg-gray-50/50 transition-colors">
+                                <tr key={appointment.id} className="hover:bg-gray-50/50 transition-colors">
                                     <td className="py-4 px-6 text-[14px] text-gray-800">
                                         {formatDate(appointment.appointmentDate)}
                                     </td>
