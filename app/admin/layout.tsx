@@ -4,7 +4,6 @@ import LogoutButton from '../component/LogoutButton';
 import { getSession } from '@/lib/auth';
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
-    const session=await getSession()
   return (
     <div className="min-h-screen bg-[#f8fafc] font-sans text-gray-900">
       {/* Top Navigation */}
@@ -13,7 +12,7 @@ export default async function AdminLayout({ children }: { children: React.ReactN
           {/* Logo and Context */}
           <div className="flex items-baseline gap-3">
             <h1 className="text-xl font-bold tracking-tight">Clinic Queue</h1>
-            <span className="text-sm font-medium text-[#e0efec]">{session?.name} Clinic</span>
+            <span className="text-sm font-medium text-[#e0efec]">Thummar Jainil Sanjaybhai Clinic</span>
             <span className="text-[11px] font-semibold bg-white/20 px-2 py-0.5 rounded-full ml-1">
               admin
             </span>
