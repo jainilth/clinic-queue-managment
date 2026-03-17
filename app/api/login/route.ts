@@ -26,6 +26,7 @@ export async function POST(req: Request) {
     const payload: SessionPlayload = {
         id: user.user.id,
         email: user.user.email,
+        name:user.user.name,
         role:user.user.role,
         accessToken:user.token,
         expiresAt: Math.floor(Date.now() / 1000) + 60 * 60 * 24 * 7,
