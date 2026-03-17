@@ -72,8 +72,7 @@ export async function AddUser(formData: FormData) {
     if (!res.ok) {
         const errorData = await res.json()
         console.log('API Error:', errorData)
-        // Redirect back with error
-        redirect(`/admin/users?error=${encodeURIComponent(errorData.error || 'Failed to add user')}`)
+        alert(errorData.error)
     }
 
     revalidatePath('/admin/users')

@@ -19,7 +19,7 @@ async function UsersPage({ searchParams }: { searchParams: { error?: string } })
                 <h2 className="text-[16px] font-bold text-gray-800 mb-2">Add receptionist, doctor, or patient</h2>
                 <p className="text-[#8c9bab] text-[13px] font-medium mb-6">
                     Create a user in your clinic. They will sign in with the email and password you set (no registration).
-                    if you enter the email that is alreay in use the form will not submit
+                    if you enter the email that is alreay in use then form will be not submit
                 </p>
 
                 <form action={AddUser} className="space-y-4" >
