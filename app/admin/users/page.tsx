@@ -16,6 +16,7 @@ async function UsersPage() {
         <div>
             <form>
                 <h1>Add reception</h1>
+                create a user in your clinic.they will sign in with the email and password you set(no registration)
             </form>
             <table>
                 <tr>
